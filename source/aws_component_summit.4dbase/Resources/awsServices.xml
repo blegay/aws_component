@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aws_services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="awsServices.xsd">
+    
+    <!-- ================================================================================
+         File created by Bruno LEGAY - A&C Consulting on 23/02/2016 v1.00.00
+         see : http://docs.aws.amazon.com/general/latest/gr/rande.html
+         updated 11/10/2016 : added ap-south-1 (Mumbai) region
+         ================================================================================ -->
+    
+    <aws_service name="ec2">
+        <region code="us-east-1"      endpoint="ec2.us-east-1.amazonaws.com"        name="US East (N. Virginia)"/>
+        
+        <region code="us-west-2"      endpoint="ec2.us-west-2.amazonaws.com"        name="US West (Oregon)"/>
+        <region code="us-west-1"      endpoint="ec2.us-west-1.amazonaws.com"        name="US West (N. California)"/>
+        
+        <region code="eu-west-1"      endpoint="ec2.eu-west-1.amazonaws.com"        name="EU (Ireland)"/>
+        <region code="eu-central-1"   endpoint="ec2.eu-central-1.amazonaws.com"     name="EU (Frankfurt)"/>
+        
+        <region code="ap-southeast-1" endpoint="ec2.ap-southeast-1.amazonaws.com"   name="Asia Pacific (Singapore)"/>
+        <region code="ap-northeast-1" endpoint="ec2.ap-northeast-1.amazonaws.com"   name="Asia Pacific (Tokyo)"/>
+        
+        <region code="ap-southeast-2" endpoint="ec2.ap-southeast-2.amazonaws.com"   name="Asia Pacific (Sydney)"/>
+        <region code="ap-northeast-2" endpoint="ec2.ap-northeast-2.amazonaws.com"   name="Asia Pacific (Seoul)"/>
+        <region code="ap-south-1"     endpoint="ec2.ap-south-1.amazonaws.com"       name="Asia Pacific (Mumbai)"/>
+        
+        <region code="sa-east-1"      endpoint="ec2.sa-east-1.amazonaws.com"        name="South America (Sao Paulo)"/>
+    </aws_service>
+
+    <aws_service name="rds">
+        <region code="us-east-1"      endpoint="rds.us-east-1.amazonaws.com"        name="US East (N. Virginia)"/>
+    
+        <region code="us-west-2"      endpoint="rds.us-west-2.amazonaws.com"        name="US West (Oregon)"/>
+        <region code="us-west-1"      endpoint="rds.us-west-1.amazonaws.com"        name="US West (N. California)"/>
+    
+        <region code="eu-west-1"      endpoint="rds.eu-west-1.amazonaws.com"        name="EU (Ireland)"/>
+        <region code="eu-central-1"   endpoint="rds.eu-central-1.amazonaws.com"     name="EU (Frankfurt)"/>
+    
+        <region code="ap-southeast-1" endpoint="rds.ap-southeast-1.amazonaws.com"   name="Asia Pacific (Singapore)"/>
+        <region code="ap-northeast-1" endpoint="rds.ap-northeast-1.amazonaws.com"   name="Asia Pacific (Tokyo)"/>
+    
+        <region code="ap-southeast-2" endpoint="rds.ap-southeast-2.amazonaws.com"   name="Asia Pacific (Sydney)"/>
+        <region code="ap-northeast-2" endpoint="rds.ap-northeast-2.amazonaws.com"   name="Asia Pacific (Seoul)"/>
+        <region code="ap-south-1"     endpoint="ec2.ap-south-1.amazonaws.com"       name="Asia Pacific (Mumbai)"/>
+    
+        <region code="sa-east-1"      endpoint="rds.sa-east-1.amazonaws.com"        name="South America (Sao Paulo)"/>
+    </aws_service>
+    
+    <aws_service name="sdb">
+        <region code="us-east-1"      endpoint="sdb.amazonaws.com"                  name="US East (N. Virginia)"/>
+        
+        <region code="us-west-2"      endpoint="sdb.us-west-2.amazonaws.com"        name="US West (Oregon)"/>
+        <region code="us-west-1"      endpoint="sdb.us-west-1.amazonaws.com"        name="US West (N. California)"/>
+        
+        <region code="eu-west-1"      endpoint="sdb.eu-west-1.amazonaws.com"        name="EU (Ireland)"/>
+        
+        <region code="ap-southeast-1" endpoint="sdb.ap-southeast-1.amazonaws.com"   name="Asia Pacific (Singapore)"/>
+        <region code="ap-northeast-1" endpoint="sdb.ap-northeast-1.amazonaws.com"   name="Asia Pacific (Tokyo)"/>
+        
+        <region code="ap-southeast-2" endpoint="sdb.ap-southeast-2.amazonaws.com"   name="Asia Pacific (Sydney)"/>
+        
+        <region code="sa-east-1"      endpoint="sdb.sa-east-1.amazonaws.com"        name="South America (Sao Paulo)"/>
+    </aws_service>
+    
+    <aws_service name="s3">
+        <region code="us-east-1"      endpoint="s3.amazonaws.com"                  name="US East (N. Virginia)"/>
+
+        <region code="us-west-2"      endpoint="s3-us-west-2.amazonaws.com"        name="US West (Oregon)"/>
+        <region code="us-west-1"      endpoint="s3-us-west-1.amazonaws.com"        name="US West (N. California)"/>
+
+        <region code="eu-west-1"      endpoint="s3-eu-west-1.amazonaws.com"        name="EU (Ireland)"/>
+            <region code="eu-central-1"   endpoint="s3-eu-central-1.amazonaws.com"     name="EU (Frankfurt)"/>
+
+        <region code="ap-southeast-1" endpoint="s3-ap-southeast-1.amazonaws.com"   name="Asia Pacific (Singapore)"/>
+        <region code="ap-northeast-1" endpoint="s3-ap-northeast-1.amazonaws.com"   name="Asia Pacific (Tokyo)"/>
+
+        <region code="ap-southeast-2" endpoint="s3-ap-southeast-2.amazonaws.com"   name="Asia Pacific (Sydney)"/>
+        <region code="ap-northeast-2" endpoint="s3-ap-northeast-2.amazonaws.com"   name="Asia Pacific (Seoul)"/>
+        <region code="ap-south-1"     endpoint="s3-ap-south-1.amazonaws.com"       name="Asia Pacific (Mumbai)"/>
+
+        <region code="sa-east-1"      endpoint="s3-sa-east-1.amazonaws.com"        name="South America (Sao Paulo)"/>
+    </aws_service>
+    
+    <aws_service name="glacier">
+        <region code="us-east-1"      endpoint="glacier.us-east-1.amazonaws.com"        name="US East (N. Virginia)"/>
+        
+        <region code="us-west-2"      endpoint="glacier.us-west-2.amazonaws.com"        name="US West (Oregon)"/>
+        <region code="us-west-1"      endpoint="glacier.us-west-1.amazonaws.com"        name="US West (N. California)"/>
+        
+        <region code="eu-west-1"      endpoint="glacier.eu-west-1.amazonaws.com"        name="EU (Ireland)"/>
+        <region code="eu-central-1"   endpoint="glacier.eu-central-1.amazonaws.com"     name="EU (Frankfurt)"/>
+    
+        <region code="ap-northeast-1" endpoint="glacier.ap-northeast-1.amazonaws.com"   name="Asia Pacific (Tokyo)"/>
+        
+        <region code="ap-southeast-2" endpoint="glacier.ap-southeast-2.amazonaws.com"   name="Asia Pacific (Sydney)"/>
+        <region code="ap-northeast-2" endpoint="glacier.ap-northeast-2.amazonaws.com"   name="Asia Pacific (Seoul)"/>
+        <region code="ap-south-1"     endpoint="glacier.ap-south-1.amazonaws.com"       name="Asia Pacific (Mumbai)"/>       	
+    </aws_service>
+</aws_services>
