@@ -27,3 +27,6 @@ The demo is written in 4D v15.x
       - fixed comments in AWS_paramGet
      MODIFICATION : Bruno LEGAY (BLE) - 14/10/2016, 10:50:36 - v1.00.03
       - fixed templates "awsConfig-template.xml" and "awsCredentials-template.xml"
+     MODIFICATION : Bruno LEGAY (BLE) - 18/10/2016, 07:31:03 - v1.00.04
+      - fixed S3_restApi, signature pb when signing querystring like ""?uploads" (the implicit "=" was not added in the canonical querystring)
+      - fixed S3_restApi,  content-type should be sent if not "" even when request body content is empty (useful for multipart uploads)
