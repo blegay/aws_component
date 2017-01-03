@@ -30,3 +30,5 @@ The demo is written in 4D v15.x
      MODIFICATION : Bruno LEGAY (BLE) - 18/10/2016, 07:31:03 - v1.00.04
       - fixed S3_restApi, signature pb when signing querystring like ""?uploads" (the implicit "=" was not added in the canonical querystring)
       - fixed S3_restApi,  content-type should be sent if not "" even when request body content is empty (useful for multipart uploads)
+     MODIFICATION : Bruno LEGAY (BLE) - 03/01/2017, 20:36:53 - v1.00.05
+      - added more log (dump xml error response) when aws replies with an error
