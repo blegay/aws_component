@@ -37,3 +37,10 @@ The demo is written in 4D v15.x
      MODIFICATION : Bruno LEGAY (BLE) - 04/04/2017, 22:00:01 - v1.00.07
       - added error handler around http request in S3_restApi
       - added logs to understand RequestTimeTooSkewed error
+     MODIFICATION : Bruno LEGAY (BLE) - 04/04/2017, 22:00:01 - v1.00.08
+      - added S3_easyBlobGet, S3_easyBlobPut, S3_easyFileGet, S3_easyFilePut
+      MODIFICATION : Bruno LEGAY (BLE) - 01/07/2018, 08:48:40 - 1.00.09
+      - added S3_fileUpload (with multipart)
+      - in 4D v17+, native SHA256 will be used
+      MODIFICATION : Bruno LEGAY (BLE) - 10/07/2018, 11:34:34 - 1.00.10
+      - added AWS_credentialsCheck

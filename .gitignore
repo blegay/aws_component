@@ -8,3 +8,5 @@
 /test/aws_demo/Resources/ffmpeg/win/win32/ffmpeg-20160428-git-78baa45-win32-static.7z
 /test/aws_demo/Logs
 /test/aws_demo/Resources/php.ini
+/build/zip_aws_component.sh
+/source/zip_aws_component_src.sh

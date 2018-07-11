@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aws_regions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="awsRegions.xsd">
+    
+    <!-- ================================================================================
+         File created by Bruno LEGAY - A&C Consulting on 23/02/2016 v1.00.00
+         see : http://docs.aws.amazon.com/general/latest/gr/rande.html
+         ================================================================================ -->
+    
+    <region name="us-east-1"      info="US East (N. Virginia)"/>
+        
+    <region name="us-west-2"      info="US West (Oregon)"/>
+    <region name="us-west-1"      info="US West (N. California)"/>
+        
+    <region name="eu-west-1"      info="EU (Ireland)"/>
+    <region name="eu-central-1"   info="EU (Frankfurt)"/>
+        
+    <region name="ap-southeast-1" info="Asia Pacific (Singapore)"/>
+    <region name="ap-northeast-1" info="Asia Pacific (Tokyo)"/>
+        
+    <region name="ap-southeast-2" info="Asia Pacific (Sydney)"/>
+    <region name="ap-northeast-2" info="Asia Pacific (Seoul)"/>
+    <region name="ap-south-1"     info="Asia Pacific (Mumbai)"/>
+        
+    <region name="sa-east-1"      info="South America (Sao Paulo)"/>
+
+</aws_regions>
