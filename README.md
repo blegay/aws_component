@@ -44,3 +44,6 @@ The demo is written in 4D v15.x
       - in 4D v17+, native SHA256 will be used
       MODIFICATION : Bruno LEGAY (BLE) - 10/07/2018, 11:34:34 - 1.00.10
       - added AWS_credentialsCheck
+     MODIFICATION : Bruno LEGAY (BLE) - 11/07/2018, 23:36:38 - 1.00.11
+      - added AWS_configDirPathGet
+      - fixed a bug in AWS_paramAuto (dir was not set properly)
