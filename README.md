@@ -47,3 +47,6 @@ The demo is written in 4D v15.x
      MODIFICATION : Bruno LEGAY (BLE) - 11/07/2018, 23:36:38 - 1.00.11
       - added AWS_configDirPathGet
       - fixed a bug in AWS_paramAuto (dir was not set properly)
+     MODIFICATION : Bruno LEGAY (BLE) - 12/07/2018, 06:34:16 - 1.00.12
+      - fixed logging OS X version
+      - refactoring
