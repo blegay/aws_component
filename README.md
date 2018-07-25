@@ -50,3 +50,6 @@ The demo is written in 4D v15.x
      MODIFICATION : Bruno LEGAY (BLE) - 12/07/2018, 06:34:16 - 1.00.12
       - fixed logging OS X version
       - refactoring
+     MODIFICATION : Bruno LEGAY (BLE) - 25/07/2018, 17:52:47 - 1.00.13
+      - update region list
+      - added S3_easyDelete
