@@ -53,3 +53,5 @@ The demo is written in 4D v15.x
      MODIFICATION : Bruno LEGAY (BLE) - 25/07/2018, 17:52:47 - 1.00.13
       - update region list
       - added S3_easyDelete
+     MODIFICATION : Bruno LEGAY (BLE) - 25/07/2018, 19:01:02 - 1.00.14
+      - fixed bug in AWS_credentialsCheck when $4 not used
