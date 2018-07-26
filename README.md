@@ -60,3 +60,7 @@ The demo is written in 4D v15.x
     MODIFICATION : Bruno LEGAY (BLE) - 26/07/2018, 12:59:31 - 1.00.16
       - improved S3_bucketContentListRspParse (added nextContinuationTokenPtr parameter)
       - added S3_bucketContentListAllGet
+    MODIFICATION : Bruno LEGAY (BLE) - 26/07/2018, 19:54:19 - 1.00.17
+      - allow numeric array for size in S3_bucketContentListAllGet, S3_bucketContentListGet, S3_bucketContentListRspParse
+      - added S3_bucketRegionGet
+      - added AWS_paramRegionGet, AWS_paramRegionSet

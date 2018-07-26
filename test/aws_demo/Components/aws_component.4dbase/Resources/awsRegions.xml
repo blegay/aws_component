@@ -5,23 +5,32 @@
     <!-- ================================================================================
          File created by Bruno LEGAY - A&C Consulting on 23/02/2016 v1.00.00
          see : http://docs.aws.amazon.com/general/latest/gr/rande.html
+         updated 25/07/2018 : updated regions
          ================================================================================ -->
     
     <region name="us-east-1"      info="US East (N. Virginia)"/>
+    <region name="us-east-2"      info="US East (Ohio)"/>
         
     <region name="us-west-2"      info="US West (Oregon)"/>
     <region name="us-west-1"      info="US West (N. California)"/>
-        
+    
+    <region name="ca-central-1"   info="Canada (Central)"/>
+    
     <region name="eu-west-1"      info="EU (Ireland)"/>
     <region name="eu-central-1"   info="EU (Frankfurt)"/>
-        
+    <region name="eu-west-2"      info="EU (London)"/>
+    <region name="eu-west-3"      info="EU (Paris)"/>
+    
     <region name="ap-southeast-1" info="Asia Pacific (Singapore)"/>
     <region name="ap-northeast-1" info="Asia Pacific (Tokyo)"/>
+    <region name="ap-northeast-3" info="Asia Pacific (Osaka-Local)"/>
         
     <region name="ap-southeast-2" info="Asia Pacific (Sydney)"/>
     <region name="ap-northeast-2" info="Asia Pacific (Seoul)"/>
     <region name="ap-south-1"     info="Asia Pacific (Mumbai)"/>
-        
+    
+    <region name="cn-north-1"     info="China (Beijing)"/>
+    <region name="cn-northwest-1" info="China (Ningxia)"/>
+    
     <region name="sa-east-1"      info="South America (Sao Paulo)"/>
-
 </aws_regions>
