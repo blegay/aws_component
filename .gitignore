@@ -28,3 +28,6 @@
 /source/_aws_component.4dbase
 /test/aws_demo/aws_demo.Match
 /test/aws_demo/aws_demo.4DIndy
+/source/aws_component-v1-00-13-src.zip
+/source/aws_component-v*-src.zip
+/build/aws_component-v*.zip

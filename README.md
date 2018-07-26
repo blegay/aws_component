@@ -57,3 +57,6 @@ The demo is written in 4D v15.x
       - fixed bug in AWS_credentialsCheck when $4 not used
     MODIFICATION : Bruno LEGAY (BLE) - 26/07/2018, 10:44:13 - 1.00.15
       - S3_bucketContentListGet made public (fix)  
+    MODIFICATION : Bruno LEGAY (BLE) - 26/07/2018, 12:59:31 - 1.00.16
+      - improved S3_bucketContentListRspParse (added nextContinuationTokenPtr parameter)
+      - added S3_bucketContentListAllGet
