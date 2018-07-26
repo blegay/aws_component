@@ -55,3 +55,5 @@ The demo is written in 4D v15.x
       - added S3_easyDelete
      MODIFICATION : Bruno LEGAY (BLE) - 25/07/2018, 19:01:02 - 1.00.14
       - fixed bug in AWS_credentialsCheck when $4 not used
+    MODIFICATION : Bruno LEGAY (BLE) - 26/07/2018, 10:44:13 - 1.00.15
+      - S3_bucketContentListGet made public (fix)  
