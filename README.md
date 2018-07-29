@@ -64,3 +64,5 @@ The demo is written in 4D v15.x
       - allow numeric array for size in S3_bucketContentListAllGet, S3_bucketContentListGet, S3_bucketContentListRspParse
       - added S3_bucketRegionGet
       - added AWS_paramRegionGet, AWS_paramRegionSet
+    MODIFICATION : Bruno LEGAY (BLE) - 29/07/2018, 10:48:44 - 1.00.18
+      - added more logs around credentials param setting and getting
