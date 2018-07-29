@@ -66,3 +66,5 @@ The demo is written in 4D v15.x
       - added AWS_paramRegionGet, AWS_paramRegionSet
     MODIFICATION : Bruno LEGAY (BLE) - 29/07/2018, 10:48:44 - 1.00.18
       - added more logs around credentials param setting and getting
+    MODIFICATION : Bruno LEGAY (BLE) - 29/07/2018, 14:18:42 - 1.00.19
+      - refactoring (added S3__styleApply and now using path style when there is a "." in the bucket name)
