@@ -71,3 +71,6 @@ The demo is written in 4D v15.x
     MODIFICATION : Bruno LEGAY (BLE) - 30/07/2018, 10:19:45 - 1.00.20
       - S3_bucketContentListAllGet and S3_bucketContentListGet, $4 was mandatory
       - added AWS_debugFileShow
+    MODIFICATION : Bruno LEGAY (BLE) - 30/07/2018, 19:00:57 - 1.00.21
+      - improved "RequestTimeTooSkewed" error handling in AWS__requestErrorHdlr (when client time is +/- 15 mins desynchronized from aws servers time)
+
