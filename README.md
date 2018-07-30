@@ -68,3 +68,6 @@ The demo is written in 4D v15.x
       - added more logs around credentials param setting and getting
     MODIFICATION : Bruno LEGAY (BLE) - 29/07/2018, 14:18:42 - 1.00.19
       - refactoring (added S3__styleApply and now using path style when there is a "." in the bucket name)
+    MODIFICATION : Bruno LEGAY (BLE) - 30/07/2018, 10:19:45 - 1.00.20
+      - S3_bucketContentListAllGet and S3_bucketContentListGet, $4 was mandatory
+      - added AWS_debugFileShow
