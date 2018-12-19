@@ -1,0 +1,7 @@
+﻿12/04/2017 22:22:48 - AWS_component v1.0.07 by Bruno LEGAY (A&C Consulting) init, 4D v15.3 Final (Build 205412) compiled, assert : on / OS X version 10.9.5
+12/04/2017 22:22:48 - AWS_credentialsLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component_summit.4dbase:Resources:awsCredentials.xsd", validation : yes
+12/04/2017 22:22:48 - AWS_credentialsLoad searching for profile : "default", xml file has 1 profile(s)
+12/04/2017 22:22:48 - AWS_credentialsLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml"
+12/04/2017 22:22:48 - AWS_configLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component_summit.4dbase:Resources:awsConfig.xsd", validation : yes
+12/04/2017 22:22:48 - AWS_configLoad searching for profile : "default", xml file has 1 profile(s)
+12/04/2017 22:22:48 - AWS_configLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml"

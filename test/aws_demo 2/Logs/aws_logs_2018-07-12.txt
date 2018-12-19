@@ -1,0 +1,63 @@
+﻿12/07/2018 00:26:30 - AWS_component v1.00.11 by Bruno LEGAY (A&C Consulting) init, 4D v15.4 Final (Build 212638) compiled, assert : on / OS X version 10.A.5
+12/07/2018 00:26:30 - AWS_credentialsLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsCredentials.xsd", validation : yes
+12/07/2018 00:26:30 - AWS_credentialsLoad searching for profile : "default", xml file has 1 profile(s)
+12/07/2018 00:26:30 - AWS_credentialsLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml"
+12/07/2018 00:26:30 - AWS_configLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsConfig.xsd", validation : yes
+12/07/2018 00:26:30 - AWS_configLoad searching for profile : "default", xml file has 1 profile(s)
+12/07/2018 00:26:30 - AWS_configLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml"
+12/07/2018 00:26:34 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+12/07/2018 00:26:34 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+12/07/2018 00:26:34 - AWS_endpointGet searching for service : "s3", xml file has 6 services(s)
+12/07/2018 00:26:34 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+12/07/2018 00:26:34 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3.eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+12/07/2018 00:26:34 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+12/07/2018 00:26:34 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+12/07/2018 00:26:34 - S3__canonicalRequestBuild canonical request : "GET /  host:s3.eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180711T222634Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+12/07/2018 00:26:34 - CRC_sha2_256Blob (258 bytes, 258 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 25,39 Kb/s (52 bytes, 52 bytes in 0,002s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+12/07/2018 00:26:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+12/07/2018 00:26:34 - AWS__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+
+host:s3.eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180711T222634Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180711T222634Z, timestamp yyyymmdd : 20180711, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180711/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b794255edd14850bc1e84df959753f2d56441e5c369de31162c13a3ad087a22, authorization done in 0,010s
+12/07/2018 00:26:34 - AWS__httpRequest GET, url : "https://s3.eu-central-1.amazonaws.com/", keepAlive : no, timeout : 120s, request headers : 
+  Host: s3.eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180711T222634Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180711/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b794255edd14850bc1e84df959753f2d56441e5c369de31162c13a3ad087a22
+  User-Agent: 4d-httpClient-4D v15.4 Final (Build 212638)/awsComponent-v1.00.11
+  , request body size : 0 byte...
+12/07/2018 00:26:35 - AWS__httpRequest GET, url : "https://s3.eu-central-1.amazonaws.com/", status : 200, keepAlive : no, duration : 0,887s, timeout : 120s, request header : 
+  Host: s3.eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180711T222634Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180711/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b794255edd14850bc1e84df959753f2d56441e5c369de31162c13a3ad087a22
+  User-Agent: 4d-httpClient-4D v15.4 Final (Build 212638)/awsComponent-v1.00.11
+  , request body size : 0 byte, response body size : 1,68 Kb (1 727 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Wed, 11 Jul 2018 22:26:36 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-id-2: pWxLTxmp9tMwg7rq6nOhiJBaGou7XXI+/JHszoEz1kiQLZHueaaWCXxdLT0gEaDjNbgILEn8EGk=
+  x-amz-request-id: AFDA4D2A3BC7D58B
+  
+12/07/2018 00:26:35 - AWS__notify notify title "s3 GET : 200", message "duration : 0,890s"

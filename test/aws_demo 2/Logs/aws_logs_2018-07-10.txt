@@ -1,0 +1,675 @@
+﻿10/07/2018 11:47:18 - AWS_component v1.00.09 by Bruno LEGAY (A&C Consulting) init, 4D v15.4 Final (Build 212638) compiled, assert : on / OS X version 10.A.5
+10/07/2018 11:47:18 - AWS_credentialsLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsCredentials.xsd", validation : yes
+10/07/2018 11:47:18 - AWS_credentialsLoad searching for profile : "default", xml file has 1 profile(s)
+10/07/2018 11:47:18 - AWS_credentialsLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsCredentials.xml"
+10/07/2018 11:47:18 - AWS_configLoad loading from xml file : "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsConfig.xsd", validation : yes
+10/07/2018 11:47:18 - AWS_configLoad searching for profile : "default", xml file has 1 profile(s)
+10/07/2018 11:47:18 - AWS_configLoad profile : "default" found at index 1 in file "Macintosh HD:Users:ble:Library:Application Support:AwsComponent:awsConfig.xml"
+10/07/2018 11:52:06 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:52:06 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:52:06 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:52:06 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:52:06 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:52:06 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,001s)
+10/07/2018 11:52:06 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:52:06 - S3__canonicalRequestBuild canonical request : "GET /  host:s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095206Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:52:06 - CRC_sha2_256Blob (258 bytes, 258 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:06 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:52:06 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+
+host:s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095206Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095206Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=741978d41431bce1257239fe9e6a9d00159016c19b18f4a302be9b77870dd403, authorization done in 0,011s
+10/07/2018 11:52:06 - S3_restApi GET, url : "https://s3-eu-central-1.amazonaws.com/", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095206Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=741978d41431bce1257239fe9e6a9d00159016c19b18f4a302be9b77870dd403
+  
+10/07/2018 11:52:07 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m2s (2s), request "Tue, 10 Jul 2018 09:52:06 GMT", aws server "Tue, 10 Jul 2018 09:52:08 GMT"
+10/07/2018 11:52:07 - S3_restApi GET, status : 200, url : "https://s3-eu-central-1.amazonaws.com/", duration : 0,878s, timeout : 120s, request header : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095206Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=741978d41431bce1257239fe9e6a9d00159016c19b18f4a302be9b77870dd403
+  , request body : 0 byte, response body size : 1,68 Kb (1 727 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:52:08 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-id-2: Pz3ZhYKQ7xGrMWHqTSSwmHG83PejMNAcbgrP0sIMvwyYyel2mkQWKE48LCdmkw5EX6GHbogSArI=
+  x-amz-request-id: F34B935971EB227C
+  
+10/07/2018 11:52:07 - AWS__notify notify title "s3 GET : 200", message "duration : 0,878s"
+10/07/2018 11:52:36 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:52:36 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:52:36 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:52:36 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:52:36 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:52:36 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:52:36 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:52:36 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-macosx.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095236Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:52:36 - CRC_sha2_256Blob (290 bytes, 290 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 21,48 Kb/s (44 bytes, 44 bytes in 0,002s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:52:36 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:52:36 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095236Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095236Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0e0824c6c6f35c313ceb9833385369a09d02a6f773f6a9e42ae61f64dde48b6, authorization done in 0,008s
+10/07/2018 11:52:36 - S3_restApi GET, url : "https://ac-consulting-macosx.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095236Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0e0824c6c6f35c313ceb9833385369a09d02a6f773f6a9e42ae61f64dde48b6
+  
+10/07/2018 11:52:37 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m2s (2s), request "Tue, 10 Jul 2018 09:52:36 GMT", aws server "Tue, 10 Jul 2018 09:52:38 GMT"
+10/07/2018 11:52:37 - S3_restApi GET, status : 200, url : "https://ac-consulting-macosx.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,672s, timeout : 120s, request header : 
+  Host: ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095236Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0e0824c6c6f35c313ceb9833385369a09d02a6f773f6a9e42ae61f64dde48b6
+  , request body : 0 byte, response body size : 1,28 Kb (1 312 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:52:38 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: BGWHXh8Yfdi2kOfepefugvou3EGmKa/DZTJtKBJ1KnxY34cM4PoUX+mal7yYxA2Kp85m10btWVg=
+  x-amz-request-id: 1A91C20A0098B515
+  
+10/07/2018 11:52:37 - AWS__notify notify title "s3 GET : 200", message "duration : 0,672s"
+10/07/2018 11:54:34 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:54:34 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:54:34 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:54:34 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:54:34 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:54:34 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:54:34 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:54:34 - S3__canonicalRequestBuild canonical request : "GET /  host:s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095434Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:54:34 - CRC_sha2_256Blob (258 bytes, 258 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 1,95 Kb/s (44 bytes, 44 bytes in 0,022s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:34 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:54:34 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+
+host:s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095434Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095434Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b508f20a2e6e8ac817daf34f3aa7ff64731c6ec8a2c72ee7cf9e6493556f368, authorization done in 0,029s
+10/07/2018 11:54:34 - S3_restApi GET, url : "https://s3-eu-central-1.amazonaws.com/", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095434Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b508f20a2e6e8ac817daf34f3aa7ff64731c6ec8a2c72ee7cf9e6493556f368
+  
+10/07/2018 11:54:34 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:54:34 GMT", aws server "Tue, 10 Jul 2018 09:54:35 GMT"
+10/07/2018 11:54:34 - S3_restApi GET, status : 200, url : "https://s3-eu-central-1.amazonaws.com/", duration : 0,218s, timeout : 120s, request header : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095434Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2b508f20a2e6e8ac817daf34f3aa7ff64731c6ec8a2c72ee7cf9e6493556f368
+  , request body : 0 byte, response body size : 1,68 Kb (1 727 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:54:35 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-id-2: R4cEwf/p+egFsegMo5nimYuCZh8joTXbbis8k/pGnCl1+ok4hlwt+/Lw6TlZqZ+bYK5z1bv7BKw=
+  x-amz-request-id: 72ED6839C94C2FA3
+  
+10/07/2018 11:54:34 - AWS__notify notify title "s3 GET : 200", message "duration : 0,218s"
+10/07/2018 11:54:41 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:54:41 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:54:41 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:54:41 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:54:41 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:54:41 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:54:41 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:54:41 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-4d-method.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095441Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:54:41 - CRC_sha2_256Blob (293 bytes, 293 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), (52 bytes, 52 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:41 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:54:41 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-4d-method.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095441Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095441Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b929f0c3451da6c0644bfb508336dbf36588374aee10791a882f13e26ce593b, authorization done in 0,008s
+10/07/2018 11:54:41 - S3_restApi GET, url : "https://ac-consulting-4d-method.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-4d-method.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095441Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b929f0c3451da6c0644bfb508336dbf36588374aee10791a882f13e26ce593b
+  
+10/07/2018 11:54:41 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:54:41 GMT", aws server "Tue, 10 Jul 2018 09:54:42 GMT"
+10/07/2018 11:54:41 - S3_restApi GET, status : 200, url : "https://ac-consulting-4d-method.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,320s, timeout : 120s, request header : 
+  Host: ac-consulting-4d-method.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095441Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b929f0c3451da6c0644bfb508336dbf36588374aee10791a882f13e26ce593b
+  , request body : 0 byte, response body size : 6,01 Kb (6 157 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:54:42 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: 2w8lDQZMjo+KVWFGvq8H/SPxC6mSZI5pLJ4YBhFvIn5dExVLM2rW/ylo6V+cmwWtmggDepTtGck=
+  x-amz-request-id: 079D131E7AF75708
+  
+10/07/2018 11:54:41 - AWS__notify notify title "s3 GET : 200", message "duration : 0,320s"
+10/07/2018 11:54:48 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:54:48 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:54:48 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:54:48 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:54:48 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:54:48 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:54:48 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:54:48 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095448Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:54:48 - CRC_sha2_256Blob 291,01 Kb/s (298 bytes, 298 bytes in 0,001s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob 93,75 Kb/s (96 bytes, 96 bytes in 0,001s)
+10/07/2018 11:54:48 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), (44 bytes, 44 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:54:48 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:54:48 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095448Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095448Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2475c8d46a3f1e76f44a3d745bc2d26652509c9570a0bde444e2cba2b19e3b1a, authorization done in 0,008s
+10/07/2018 11:54:48 - S3_restApi GET, url : "https://ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095448Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2475c8d46a3f1e76f44a3d745bc2d26652509c9570a0bde444e2cba2b19e3b1a
+  
+10/07/2018 11:54:49 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:54:48 GMT", aws server "Tue, 10 Jul 2018 09:54:49 GMT"
+10/07/2018 11:54:49 - S3_restApi GET, status : 200, url : "https://ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,269s, timeout : 120s, request header : 
+  Host: ac-consulting-demo-summit-en.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095448Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=2475c8d46a3f1e76f44a3d745bc2d26652509c9570a0bde444e2cba2b19e3b1a
+  , request body : 0 byte, response body size : 1,50 Kb (1 541 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:54:49 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: h3vO0r4I9kBdykFtI9inbTqlapgbHz49GV7R4s3fY7XJTrQa1y/oxMTkpZKnj1pIBXGhGLbfU1s=
+  x-amz-request-id: 0652C969EE976A3E
+  
+10/07/2018 11:54:49 - AWS__notify notify title "s3 GET : 200", message "duration : 0,269s"
+10/07/2018 11:55:07 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:55:07 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:55:07 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:55:07 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:55:07 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:55:07 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:55:07 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:55:07 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-macosx.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095507Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:55:07 - CRC_sha2_256Blob 283,20 Kb/s (290 bytes, 290 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob 93,75 Kb/s (96 bytes, 96 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:55:07 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:55:07 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095507Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095507Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=af0ae3503ad9e274c14a72db6277e180a506a8b215a09a48a351889a3b777793, authorization done in 0,009s
+10/07/2018 11:55:07 - S3_restApi GET, url : "https://ac-consulting-macosx.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095507Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=af0ae3503ad9e274c14a72db6277e180a506a8b215a09a48a351889a3b777793
+  
+10/07/2018 11:55:07 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:55:07 GMT", aws server "Tue, 10 Jul 2018 09:55:08 GMT"
+10/07/2018 11:55:07 - S3_restApi GET, status : 200, url : "https://ac-consulting-macosx.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,220s, timeout : 120s, request header : 
+  Host: ac-consulting-macosx.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095507Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=af0ae3503ad9e274c14a72db6277e180a506a8b215a09a48a351889a3b777793
+  , request body : 0 byte, response body size : 1,28 Kb (1 312 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:55:08 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: g9cD82ekclXgjmVV2/7b4yFibrUyg1/9hA8S7Hx+5HSJcjWwDaYHNTPXj77/lE7VWuAsvvU0IvA=
+  x-amz-request-id: EE1C01A897706970
+  
+10/07/2018 11:55:07 - AWS__notify notify title "s3 GET : 200", message "duration : 0,220s"
+10/07/2018 11:58:04 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:58:04 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:58:04 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:58:04 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:58:04 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:58:04 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:58:04 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:58:04 - S3__canonicalRequestBuild canonical request : "GET /  host:s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095804Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:58:04 - CRC_sha2_256Blob (258 bytes, 258 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:04 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:58:04 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+
+host:s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095804Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095804Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=70795b6d419bb8036bd1dd1defa5a99b96b3aba6b3a3c82e4f13e80c11acb839, authorization done in 0,028s
+10/07/2018 11:58:04 - S3_restApi GET, url : "https://s3-eu-central-1.amazonaws.com/", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095804Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=70795b6d419bb8036bd1dd1defa5a99b96b3aba6b3a3c82e4f13e80c11acb839
+  
+10/07/2018 11:58:05 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:58:04 GMT", aws server "Tue, 10 Jul 2018 09:58:05 GMT"
+10/07/2018 11:58:05 - S3_restApi GET, status : 200, url : "https://s3-eu-central-1.amazonaws.com/", duration : 0,937s, timeout : 120s, request header : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095804Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=70795b6d419bb8036bd1dd1defa5a99b96b3aba6b3a3c82e4f13e80c11acb839
+  , request body : 0 byte, response body size : 1,68 Kb (1 727 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:58:05 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-id-2: MDJqACEEx6YobOqtQa4AboKihr64iMQKbHuHqQ5YBLenQ/bgdzlYjimsIUsDWQk7AhMLnQuZgjY=
+  x-amz-request-id: 41C894B70DE873A6
+  
+10/07/2018 11:58:05 - AWS__notify notify title "s3 GET : 200", message "duration : 0,937s"
+10/07/2018 11:58:18 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:58:18 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:58:18 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:58:18 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:58:18 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:58:18 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:58:18 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:58:18 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-backup-test.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095818Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:58:18 - CRC_sha2_256Blob (295 bytes, 295 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:18 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:19 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:19 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:58:19 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:19 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:58:19 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-backup-test.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095818Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095818Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=22748aea24241195e59b49d1dba9a131cabd0e493a24487a33ee5857c468e755, authorization done in 0,008s
+10/07/2018 11:58:19 - S3_restApi GET, url : "https://ac-consulting-backup-test.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-backup-test.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095818Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=22748aea24241195e59b49d1dba9a131cabd0e493a24487a33ee5857c468e755
+  
+10/07/2018 11:58:19 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m2s (2s), request "Tue, 10 Jul 2018 09:58:18 GMT", aws server "Tue, 10 Jul 2018 09:58:20 GMT"
+10/07/2018 11:58:19 - S3_restApi GET, status : 200, url : "https://ac-consulting-backup-test.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,573s, timeout : 120s, request header : 
+  Host: ac-consulting-backup-test.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095818Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=22748aea24241195e59b49d1dba9a131cabd0e493a24487a33ee5857c468e755
+  , request body : 0 byte, response body size : 1,14 Kb (1 174 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:58:20 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: C0kOHEADKLRsWrz5pkmMHIss+kEb8QrMXK3i4hRQBsvtzADiRP4U7ME47wiY5nMlPh0AlxSoFN0=
+  x-amz-request-id: E01A3C15FF945C57
+  
+10/07/2018 11:58:19 - AWS__notify notify title "s3 GET : 200", message "duration : 0,573s"
+10/07/2018 11:58:27 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:58:27 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:58:27 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:58:27 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:58:27 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:58:27 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:58:27 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:58:27 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-components.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095827Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:58:27 - CRC_sha2_256Blob (294 bytes, 294 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 16,60 Kb/s (34 bytes, 34 bytes in 0,002s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:27 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:58:27 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-components.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095827Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095827Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9521c030b5a9358c19e0dd6e5be9d4d0026a9d38adb1ab9d7b3c6da1c2a36142, authorization done in 0,008s
+10/07/2018 11:58:27 - S3_restApi GET, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095827Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9521c030b5a9358c19e0dd6e5be9d4d0026a9d38adb1ab9d7b3c6da1c2a36142
+  
+10/07/2018 11:58:27 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:58:27 GMT", aws server "Tue, 10 Jul 2018 09:58:28 GMT"
+10/07/2018 11:58:27 - S3_restApi GET, status : 200, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,289s, timeout : 120s, request header : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095827Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9521c030b5a9358c19e0dd6e5be9d4d0026a9d38adb1ab9d7b3c6da1c2a36142
+  , request body : 0 byte, response body size : 1,60 Kb (1 645 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:58:28 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: TAbxSxpIlo2VxZMsdo3AoAsYfURrYyN3JsGYz9JKy4TH9euuQQ30d7W4OSvCREeYOZDPMZmfGQc=
+  x-amz-request-id: 1A0227BF0C9E165C
+  
+10/07/2018 11:58:27 - AWS__notify notify title "s3 GET : 200", message "duration : 0,289s"
+10/07/2018 11:58:31 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:58:31 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:58:31 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:58:31 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:58:31 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:58:31 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:58:31 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:58:31 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-components.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095831Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:58:31 - CRC_sha2_256Blob (294 bytes, 294 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:58:31 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:58:31 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-components.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095831Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095831Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9486bdb72e0ae32655f335151bae9689c85bc8e00a7cb80a2bb60a306b438baf, authorization done in 0,008s
+10/07/2018 11:58:31 - S3_restApi GET, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095831Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9486bdb72e0ae32655f335151bae9689c85bc8e00a7cb80a2bb60a306b438baf
+  
+10/07/2018 11:58:31 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:58:31 GMT", aws server "Tue, 10 Jul 2018 09:58:32 GMT"
+10/07/2018 11:58:31 - S3_restApi GET, status : 200, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,238s, timeout : 120s, request header : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095831Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=9486bdb72e0ae32655f335151bae9689c85bc8e00a7cb80a2bb60a306b438baf
+  , request body : 0 byte, response body size : 1,60 Kb (1 645 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:58:32 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: UAuVXMYHfNQDxhMwu6hJT1xuKeZcqX5Mg+3+HHj4TSA+tCOXlygBZjwxlMGhFE3SfVXjIpc6hmo=
+  x-amz-request-id: 6FECA66F9B46EDAF
+  
+10/07/2018 11:58:31 - AWS__notify notify title "s3 GET : 200", message "duration : 0,238s"
+10/07/2018 11:59:13 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:59:13 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:59:13 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:59:13 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:59:13 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:59:13 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:59:13 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:59:13 - S3__canonicalRequestBuild canonical request : "GET /  host:s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095913Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:59:13 - CRC_sha2_256Blob (258 bytes, 258 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 2,26 Kb/s (44 bytes, 44 bytes in 0,019s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (200 bytes, 200 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:13 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 164,06 Kb/s (168 bytes, 168 bytes in 0,001s)
+10/07/2018 11:59:13 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+
+host:s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095913Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095913Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a1c7c174de548fc566a5c5fa67d692855e2a59b5681e3567315a79008cb9e32b, authorization done in 0,026s
+10/07/2018 11:59:13 - S3_restApi GET, url : "https://s3-eu-central-1.amazonaws.com/", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095913Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a1c7c174de548fc566a5c5fa67d692855e2a59b5681e3567315a79008cb9e32b
+  
+10/07/2018 11:59:13 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:59:13 GMT", aws server "Tue, 10 Jul 2018 09:59:14 GMT"
+10/07/2018 11:59:13 - S3_restApi GET, status : 200, url : "https://s3-eu-central-1.amazonaws.com/", duration : 0,272s, timeout : 120s, request header : 
+  Host: s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095913Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a1c7c174de548fc566a5c5fa67d692855e2a59b5681e3567315a79008cb9e32b
+  , request body : 0 byte, response body size : 1,68 Kb (1 727 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:59:14 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-id-2: I/gAXClNS5hC46Ku19LTevVQoOLoIkteLcDatTFY0ajxqMwceRe0nmn4RUdOSG0Mrfns+Rc9F5s=
+  x-amz-request-id: A93191B5824A32BF
+  
+10/07/2018 11:59:13 - AWS__notify notify title "s3 GET : 200", message "duration : 0,272s"
+10/07/2018 11:59:28 - AWS_paramGet, using interprocess parameters, region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8"
+10/07/2018 11:59:28 - AWS_endpointGet loading from xml file : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml", schema : "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xsd", validation : yes
+10/07/2018 11:59:28 - AWS_endpointGet searching for service : "s3", xml file has 5 services(s)
+10/07/2018 11:59:28 - AWS_endpointGet service : "s3", found in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml"
+10/07/2018 11:59:28 - AWS_endpointGet service : "s3", region : "eu-central-1" => endpoint : "s3-eu-central-1.amazonaws.com" in file "Macintosh HD:Users:ble:Documents:Projets:BaseRef_v14:aws_component:test:aws_demo:Components:aws_component.4dbase:Resources:awsServices.xml". [OK]
+10/07/2018 11:59:28 - CRC_sha2_256Blob (0 byte, 0 bytes in 0,000s)
+10/07/2018 11:59:28 - S3__canonicalRequestBuild signed headers : "host;x-amz-content-sha256;x-amz-date"
+10/07/2018 11:59:28 - S3__canonicalRequestBuild canonical request : "GET / list-type=2 host:ac-consulting-components.s3-eu-central-1.amazonaws.com x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 x-amz-date:20180710T095928Z  host;x-amz-content-sha256;x-amz-date e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+10/07/2018 11:59:28 - CRC_sha2_256Blob (294 bytes, 294 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (72 bytes, 72 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_hmacSha2_256Blob key size : 44 byte(s), message size : 8 byte(s), 50,78 Kb/s (52 bytes, 52 bytes in 0,001s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (66 bytes, 66 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 2 byte(s), 33,20 Kb/s (34 bytes, 34 bytes in 0,001s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (76 bytes, 76 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 12 byte(s), 42,96 Kb/s (44 bytes, 44 bytes in 0,001s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob 195,31 Kb/s (200 bytes, 200 bytes in 0,001s)
+10/07/2018 11:59:28 - CRC_sha2_256Blob (96 bytes, 96 bytes in 0,000s)
+10/07/2018 11:59:28 - CRC_hmacSha2_256Blob key size : 32 byte(s), message size : 136 byte(s), 82,03 Kb/s (168 bytes, 168 bytes in 0,002s)
+10/07/2018 11:59:28 - S3__authHeaderLine region : "eu-central-1", awsAccessKeyId : "AK****************5Q", awsSecretAccessKey : "1V************************************d8", canonicalRequest : GET
+/
+list-type=2
+host:ac-consulting-components.s3-eu-central-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20180710T095928Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, signedHeaders : host;x-amz-content-sha256;x-amz-date, timestampIso8601 : 20180710T095928Z, timestamp yyyymmdd : 20180710, "Authorization" header value : AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=8066621289af8bcb7216abaf9ca3f1f60c136236cf14a01346c0aa573bbb5514, authorization done in 0,008s
+10/07/2018 11:59:28 - S3_restApi GET, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", keepAlive : no, request body size : 0 byte, response body size : 0 byte, request headers : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095928Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=8066621289af8bcb7216abaf9ca3f1f60c136236cf14a01346c0aa573bbb5514
+  
+10/07/2018 11:59:29 - S3__requestTimeTooSkewedErrHdlr - http status : 200, difference between the request time and the aws server time : 0h0m1s (1s), request "Tue, 10 Jul 2018 09:59:28 GMT", aws server "Tue, 10 Jul 2018 09:59:29 GMT"
+10/07/2018 11:59:29 - S3_restApi GET, status : 200, url : "https://ac-consulting-components.s3-eu-central-1.amazonaws.com/?list-type=2", duration : 0,200s, timeout : 120s, request header : 
+  Host: ac-consulting-components.s3-eu-central-1.amazonaws.com
+  x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  x-amz-date: 20180710T095928Z
+  Authorization: AWS4-HMAC-SHA256 Credential=AKIAIAPNVLVZRS3TJM5Q/20180710/eu-central-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=8066621289af8bcb7216abaf9ca3f1f60c136236cf14a01346c0aa573bbb5514
+  , request body : 0 byte, response body size : 1,60 Kb (1 645 bytes), response headers : 
+  Connection: close
+  Content-Type: application/xml
+  Date: Tue, 10 Jul 2018 09:59:29 GMT
+  Server: AmazonS3
+  Transfer-Encoding: chunked
+  x-amz-bucket-region: eu-central-1
+  x-amz-id-2: /pkzEfTYhhGIAtIMOgDuGyM1t9ACIUOGkJL26y73eKGAcbLrI3KZ9akgq55hV/amCaO/xmMTXNw=
+  x-amz-request-id: 8427641D35C04047
+  
+10/07/2018 11:59:29 - AWS__notify notify title "s3 GET : 200", message "duration : 0,200s"

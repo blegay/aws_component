@@ -73,4 +73,6 @@ The demo is written in 4D v15.x
       - added AWS_debugFileShow
     MODIFICATION : Bruno LEGAY (BLE) - 30/07/2018, 19:00:57 - 1.00.21
       - improved "RequestTimeTooSkewed" error handling in AWS__requestErrorHdlr (when client time is +/- 15 mins desynchronized from aws servers time)
+    MODIFICATION : Bruno LEGAY (BLE) - 19/12/2018, 09:32:06 - v1.00.22
+      - improved "RequestTimeTooSkewed" error handling not working properly when debug was off (added notification)
 

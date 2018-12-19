@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <Owner>
+        <ID>230597sn0o1r75190r4531qp650117772q05qsponn7po857o9380p8rqqq28874</ID>
+    </Owner>
+    <Buckets>
+        <Bucket>
+            <Name>ac-consulting-test</Name>
+            <CreationDate>2016-01-02T12:08:12.000Z</CreationDate>
+        </Bucket>
+        <Bucket>
+            <Name>ac-consulting-prod</Name>
+            <CreationDate>2016-01-03T12:08:12.000Z</CreationDate>
+        </Bucket>
+    </Buckets>
+</ListAllMyBucketsResult>
